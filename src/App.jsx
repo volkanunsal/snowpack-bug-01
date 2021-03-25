@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { events } from 'events';
+import { EventEmitter } from 'events';
 
 function App() {
-  console.log(events);
+  console.log(EventEmitter);
   // Create the count state.
   const [count, setCount] = useState(0);
   // Create the counter (+1 every second).
